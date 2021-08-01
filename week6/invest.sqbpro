@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/ws/python-web-crawler/week6/invest.db3" readonly="0" foreign_keys="" case_sensitive_like="" temp_store="" wal_autocheckpoint="" synchronous=""/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1541"/><column_width id="4" width="0"/></tab_structure><tab_browse><current_table name="0,0:"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">SELECT stock_history.stock_id, stock_name, trad_date, open_price, high_price, low_price, close_price, total_volume 
+FROM stock_history
+JOIN stock ON stock.stock_id == stock_history.stock_id
+WHERE stock_history.stock_id = '4906' AND trad_date &gt;= '2021-07-10' AND trad_date &lt;= '2021-07-20'</sql><current_tab id="0"/></tab_sql></sqlb_project>
